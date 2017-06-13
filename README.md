@@ -1,3 +1,13 @@
-# My Awesome Book
+# Deploy RabbitMQ cluster on AWS
 
-This file file serves as your book's preface, a great place to describe your book's content and ideas.
+官方推薦幾種建立 Cluster 方式
+
+1. 手動使用 rabbitmqctl 指令
+2. 定義 node config file
+3. 使用 [rabbitmq-autocluster](https://github.com/aweber/rabbitmq-autocluster/) plugin
+   1. 可以自動伸縮 Cluster 大小
+   2. 使用 Container、consul、etcd2
+   3. AWS 搭配 EC2 tag、Auto Scaling
+
+
+
