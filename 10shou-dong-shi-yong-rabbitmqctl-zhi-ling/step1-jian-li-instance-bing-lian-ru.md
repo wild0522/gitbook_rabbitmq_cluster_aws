@@ -12,10 +12,10 @@ aws ec2 run-instances \
 --count 1
 ```
 
-若有需要，可帶 user-data 執行 shell
+若有需要，可帶 user-data 執行 shell \(\*.即使是絕對路徑，前面還是要加 **file:// 這個 prefix**\)
 
 ```
---user-data rabbitmq-user-data.sh #建立後，執行
+--user-data file://rabbitmq-user-data.sh #建立後，執行
 ```
 
 相關資源
