@@ -20,5 +20,25 @@ $ rabbitmqctl stop_app #node用
 $ rabbitmqctl cluster_status
 ```
 
+查權限清單\( 指定hostpath\) 
+
+```
+$ rabbitmqctl list_permissions [-p VHostPath]
+```
+
+查單一 User
+
+```
+$ rabbitmqctl list_user_permissions User
+```
+
+清除 User 的權限 \(帳號還會在\)
+
+```
+$ rabbitmqctl clear_permissions [-p VHostPath] User
+```
+
+
+
 
 

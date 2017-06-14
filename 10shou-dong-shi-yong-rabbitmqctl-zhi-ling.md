@@ -7,5 +7,24 @@
    1. AWS hostname 預設為 private ip
 3. 同個 security group
 
+  
+Port
+
+* **EPMD:** 4369
+* **AMQP**: 5671-5672
+* **clustering**: 25672
+* **http:** 15672
+
+Filepath \([link](https://www.rabbitmq.com/relocate.html)\)
+
+* /var/lib/rabbitmq/  **\#persistent data like the messages or queues**
+* /etc/rabbitmq/rabbitmq.config **\#config**
+* /var/lib/rabbitmq/mnesia/rabbit@ip-000-000-000-000 **\#Database directory**
+* /var/log/rabbitmq/ip-000-000-000-000.log  **\#Log file**
+* /var/log/rabbitmq/ip-000-000-000-000.log  **\#SASL Log file**
+* /var/lib/rabbitmq/.erlang.cookie **\#elang.cookie**
+
+
+
 
 
