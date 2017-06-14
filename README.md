@@ -1,5 +1,9 @@
 # Deploy RabbitMQ cluster on AWS
 
+
+
+# ![](/assets/rabbitmqlogo.png) + ![](/assets/AWSlogo_200x100.png)
+
 官方推薦幾種建立 Cluster 方式
 
 1. 手動使用 rabbitmqctl 指令
