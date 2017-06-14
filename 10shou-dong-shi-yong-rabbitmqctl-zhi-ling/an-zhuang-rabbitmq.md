@@ -1,6 +1,6 @@
 # 安裝 rabbitMQ
 
-先裝第一台\(master\)，之後的 node 也是相同安裝流程
+先裝第一台\(node0\)，之後的 node 也是相同安裝流程
 
 on Ubuntu 16.04
 
@@ -18,7 +18,7 @@ root@ip-172-5-5-100 # apt-get install rabbitmq-server
 root@ip-172-5-5-100 # rabbitmq-plugins enable rabbitmq_management
 ```
 
-新增 user
+新增 user \(每個節點都可登入\)
 
 ```
 root@ip-172-5-5-100 # rabbitmqctl add_user 帳號 密碼

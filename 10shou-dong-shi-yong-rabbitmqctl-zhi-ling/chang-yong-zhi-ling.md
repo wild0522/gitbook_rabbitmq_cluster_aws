@@ -20,7 +20,7 @@ $ rabbitmqctl stop_app #node用
 $ rabbitmqctl cluster_status
 ```
 
-查權限清單\( 指定hostpath\) 
+查權限清單\( 指定hostpath\)
 
 ```
 $ rabbitmqctl list_permissions [-p VHostPath]
@@ -38,7 +38,11 @@ $ rabbitmqctl list_user_permissions User
 $ rabbitmqctl clear_permissions [-p VHostPath] User
 ```
 
+刪除已離線的 node
 
+```
+$ rabbitmqctl forget_cluster_node rabbit@hostname
+```
 
 
 

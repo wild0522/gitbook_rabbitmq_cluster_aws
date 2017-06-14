@@ -18,7 +18,7 @@ aws ec2 run-instances \
 --user-data file://rabbitmq-user-data.sh #建立後，執行
 ```
 
-相關資源
+相關參數
 
 * **instance-type** [https://aws.amazon.com/tw/ec2/instance-types/](https://aws.amazon.com/tw/ec2/instance-types/)
 * **image-id** 可到 ami 建立後取得

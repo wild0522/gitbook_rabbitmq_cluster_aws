@@ -20,7 +20,7 @@ $ rabbitmqctl stop_app
 
 ```
 vi /etc/hosts
-xxxxxxx 111.222.333.444 #master node
+xxxxxxx 111.222.333.444 #master_hostname master_ip
 ```
 
 

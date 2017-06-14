@@ -8,5 +8,6 @@
   * [常用指令](10shou-dong-shi-yong-rabbitmqctl-zhi-ling/chang-yong-zhi-ling.md)
   * [常見狀況](10shou-dong-shi-yong-rabbitmqctl-zhi-ling/chang-jian-zhuang-kuang.md)
   * [番外篇：使用 docker-machine](10shou-dong-shi-yong-rabbitmqctl-zhi-ling/fan-wai-pian-ff1a-shi-yong-docker-machine.md)
+  * [速成：awscli + shell ](10shou-dong-shi-yong-rabbitmqctl-zhi-ling/su-cheng-ff1a-awscli-+-shell.md)
 * [4.docker-compose link 方式](4docker-compose-link-fang-shi.md)
 

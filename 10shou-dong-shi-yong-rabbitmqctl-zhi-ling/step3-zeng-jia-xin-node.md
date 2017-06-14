@@ -1,4 +1,4 @@
-先在 Master 機器，取得 erlang.cookie
+先在 Node0 機器，取得 erlang.cookie
 
 ```
 root@ip-172-5-5-100 # cat /var/lib/rabbitmq/.erlang.cookie
@@ -7,7 +7,7 @@ PCNVWAZRZYQUUQYSYXIK
 
 依照 Step 1,2 再建立一台 instance
 
-將 Master 的 cookie 寫入 node1
+將 Node0 的 cookie 寫入 node1
 
 ```
 root@ip-172-5-5-101 # echo "PCNVWAZRZYQUUQYSYXIK" > /var/lib/rabbitmq/.erlang.cookie
@@ -19,7 +19,7 @@ root@ip-172-5-5-101 # echo "PCNVWAZRZYQUUQYSYXIK" > /var/lib/rabbitmq/.erlang.co
 root@ip-172-5-5-101 # service rabbitmq-server restart
 ```
 
-脫離
+Detached
 
 ```
 root@ip-172-5-5-101 # rabbitmq-server -detached
@@ -31,9 +31,9 @@ root@ip-172-5-5-101 # rabbitmq-server -detached
 root@ip-172-5-5-101 # rabbitmqctl stop_app
 ```
 
-將 node1 加到 master
+將 node1 加到 Node0
 
-@後面為 master 的 hostname
+@後面為 Node0 的 hostname
 
 ```
 root@ip-172-5-5-101 # rabbitmqctl join_cluster rabbit@ip-172-5-5-100
@@ -47,7 +47,7 @@ root@ip-172-5-5-101 # rabbitmqctl join_cluster rabbit@ip-172-5-5-100
 root@ip-172-5-5-101 # rabbitmqctl start_app
 ```
 
-到 master 機器，查看是否成功
+到 Node0 機器，查看是否成功
 
 ```
 root@ip-172-5-5-101 # rabbitmqctl cluster_status
