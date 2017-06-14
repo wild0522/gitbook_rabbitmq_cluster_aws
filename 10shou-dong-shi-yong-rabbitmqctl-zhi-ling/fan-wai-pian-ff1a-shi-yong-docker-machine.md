@@ -1,11 +1,9 @@
 與 Cluster 相關的幾個 docker 服務
 
-* **docker-machine** 來控制多台機器，除了 virtualbox，還可建立、管理 EC2、GCP、Azure
+* **docker-machine** 來控制多台機器，可建立VM、EC2、GCP、Azure...，並由同一組指令來管理這些機器
 * **docker-swarm** 來整合多台機器，形成叢集
 * **docker network** 將特定幾台機器，指定互相連接的方式 \(network level\)
 * **docker service** 將 build 好的 docker image，部署到 N 台機器，且能夠即時伸縮 scale
-
-
 
 這邊要建立 AWS machine，需先完成 awscli 安裝
 
@@ -33,6 +31,4 @@ $ docker-machine ssh aws-03
 ```
 
 接著從 Step1 開始安裝，也能達到同樣結果
-
-
 
