@@ -1,5 +1,7 @@
 # Deploy RabbitMQ cluster on AWS
 
+#### From Tapgo .Inc \([http://tapgo.cc](http://tapgo.cc)\) 
+
 # ![](/assets/rabbitmqlogo.png) + ![](/assets/AWSlogo_200x100.png)
 
 官方推薦前3種建立 Cluster 方式
