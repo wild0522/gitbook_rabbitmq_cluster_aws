@@ -23,7 +23,7 @@ aws ec2 run-instances \
 * **instance-type** [https://aws.amazon.com/tw/ec2/instance-types/](https://aws.amazon.com/tw/ec2/instance-types/)
 * **image-id** 可到 ami 建立後取得
 * **key-name** 到 key Pairs 建立後取得
-* **subnet-id** 到Elastic IPs-&gt;Network interface ID -&gt;Subnet ID
+* **subnet-id** 到 Network interface 建立後取得，需指定對應的 Security groups
 * **vpc-id** 到 security group 建立後取得
 * **zone** 為 Dashboard -&gt;Avilability zone 最後一個字
 
